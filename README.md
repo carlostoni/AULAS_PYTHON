@@ -1,4 +1,4 @@
-# AULA 2 PYTHON🚀
+# AULAS PYTHON🚀
 Nesta aula tivemos a introduçâo a Python
 
 
