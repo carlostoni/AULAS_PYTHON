@@ -28,10 +28,22 @@
 # print(resultado)
 
 #atividade 4
-# dicionario ={
-#     'alegre': 'alegria',
-#     'cooreto': 'certo',
-#     'maratona': 'maratonista',
-#     'motocicleta': 'moto',
+# dicionario = {}
+# dicionario ['chave'] = 'valor'
+# dicionario ['chave1'] = 'valor1'
+# dicionario ['chave2'] = 'valor2'
+# dicionario ['chave3'] = 'valor3'
 
-# }
+# print(dicionario)
+#atividade 5
+# produtos = {}
+
+# for i in range(3):
+#     nome_produto = input('Digite o nome do produto: ')
+#     preco_produto = float(input('Digite o peço do produto: '))
+#     produtos[nome_produto] = preco_produto
+
+# print('Leads: ')
+
+# for produto, preco in produtos.items():
+#     print(f'{produto}: R$ {preco: 2f}')
