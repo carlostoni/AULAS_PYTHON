@@ -34,6 +34,32 @@
 #     'motocicleta': 'moto',
 
 # }
-# guests = {'Guest1':'Dino Sammy', 'Guest2':'Xray Sammy'}
-# dicionario.update(guests)
+# dicionario = {'verdade':'vedadeiro'}
+# dicionario.update(dicionario)
 # print(dicionario)
+
+# atividade 5
+# dicionario ={
+#     'alegre': 'alegria',
+#     'cooreto': 'certo',
+#     'maratona': 'maratonista',
+#     'motocicleta': 'moto',
+
+# }
+
+# palavra = input('Digite a primeria palavra: ')
+# significado = input('Digite a segunda palavra: ')
+# dicionario[palavra] = significado
+
+# print(dicionario)
+
+#atividade 6
+# def mercado1():
+#     mercado = {}
+
+#     produto = input('Digite o nome do produto: ')
+#     preco = input('Digite o preço do produto: ')
+#     mercado[produto]= preco
+
+#     print(mercado)
+# mercado1()
