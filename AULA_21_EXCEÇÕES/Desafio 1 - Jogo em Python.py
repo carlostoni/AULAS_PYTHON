@@ -61,9 +61,16 @@ class Jogo:
                 print(f'O {numero} e diferente de {numero2}')
                 print(f'voce tem  {contador}')
 
+jogador = input("Digite um nome: ")
+idade = 0
 
-jogador = input("digite um nome ")
-idade = float(input("digite sua idade "))
+try:
+    idade = float(input("Digite sua idade: "))
+    if idade < 0:
+        raise ValueError("Idade não pode ser negativa")
+except ValueError as e:
+    print(f"Erro de execução: {e}")
+    exit()
 
 
 facil = Jogo(jogador, idade)
@@ -71,26 +78,14 @@ intermediario= Jogo(jogador, idade)
 dificil = Jogo(jogador, idade)
 
 
-if idade > 0 and idade < 10:
+if idade >= 0 and idade < 10:
     print('nivel facil')
     facil.nivel_facil()
 
 elif idade > 10 and idade <= 18:
     print('nivel intermediariointermediario')
     intermediario.nivel_intermediario()
-elif idade >= 19:
+else :
     print('nivel dificil')
     dificil.nivel_dificil()
-elif(idade < 0):
-        raise ValueError("idade nao pode ser negativa")
-else:
-        raise ValueError("idade nao pode ser zero")
 
-try:   
-    if idade.is_integer():
-        Jogo(idade)
-    else:
-        raise ValueError("idade nao pode ser numero quebrado")
-    Jogo(idade)
-except ValueError as e:
-    print(f"erro de execucao {e} ")
