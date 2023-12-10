@@ -62,10 +62,10 @@
 #     print(i)
 
 
-# lista = ["maçã", "banana", "laranja"]
-# for i in lista:
-#     print(i[1])# numero da letra na palavra
-#     print(i)
+lista = ["maçã", "banana", "laranja"]
+for i in lista:
+    print(i[1])# numero da letra na palavra
+    print(i)
 
 # dados = {
 #     'joao': 'julio',
@@ -76,10 +76,10 @@
 #     print(f'{i1} : {i2}')
 
 ##MATRIZ
-matriz=[[1,2,3],[4,5,6],[7,8,9]]
-for i in matriz: #i vai trazer as 3 matrizes
-    for n in i: # n vai trazer as 3 matrizes 3 vezes 
-        print(n)
+# matriz=[[1,2,3],[4,5,6],[7,8,9]]
+# for i in matriz: #i vai trazer as 3 matrizes
+#     for n in i: # n vai trazer as 3 matrizes 3 vezes 
+#         print(n)
 
 
 

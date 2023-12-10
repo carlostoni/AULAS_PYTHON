@@ -60,16 +60,16 @@ print('digite 3 notas')
 lista = []
 
 for i in range(3):
-    numeros = float(input('digite as notas'))
+    numeros = float(input('digite as notas '))
           
     if i in range(3) :
         lista.append(numeros)
     
     print(lista) 
           
-soma = sum(lista)
+soma = sum(lista) /3
 print(soma)
-if soma <= 7:
+if soma >= 7:
     print('Aprovado')
 elif soma >= 5:
     print('recuperacao')

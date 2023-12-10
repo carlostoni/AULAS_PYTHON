@@ -31,9 +31,35 @@
 #      print(f'{numeros} * {contador} = ',numeros * contador)
 #      contador += 1
 
-## ATIVIDADE 4
-contador = 100
-while contador > 0:
+# ## ATIVIDADE 4
+# contador = 100
+# while contador > 0:
      
-     print(f'{contador}')
-     contador -= 1
+#      print(f'{contador}')
+#      contador -= 1
+
+# Teste o Random: 
+# ## ATIVIDADE 1
+
+# import random
+
+# aleatorio = random.randint(5,10)
+# print(f'Esse é o numero {aleatorio}')
+
+# ## ATIVIDADE 2
+# import random
+
+# contador = 0
+# while contador < 3:
+#      aleatorio = random.randint(0,10)
+#      print(f'{aleatorio}')
+#      contador += 1
+
+import random
+aleatorio = random.randint(10,30)
+
+for aleatorio in range(20):
+    if aleatorio < 3:
+        print(aleatorio)
+    else:
+        print("Igual ou maior que 3")

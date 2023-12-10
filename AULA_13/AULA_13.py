@@ -35,7 +35,7 @@
 # print(nomes.split('/'))
 # #resultado: ['João Paulo', 'Maria Paula', 'Ana Beatriz', 'José Pedro']
 
-frase = "iOlá, mundo!"
+frase = "Olá, mundo!"
 if frase.startswith("Olá"):
     print("A frase começa com 'Olá'.")
 else:
