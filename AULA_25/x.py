@@ -62,3 +62,55 @@ def delete():
 root = tk.Tk()
 
 root.mainloop()
+
+
+import tkinter as tk
+from tkinter import messagebox
+
+def create():
+    item = name_entry.get()
+    if item:
+        items_listbox.insert(tk.END, item)
+        name_entry.delete(0, tk.END)
+
+def read():
+    selected_item = items_listbox.curselection()
+    if selected_item:
+        item = items_listbox.get(selected_item)
+        messagebox.showinfo('Selecionado', f'Dados - {item}')
+
+def update():
+    selected_item = items_listbox.curselection()
+    if selected_item:
+        new_item = name_entry.get()
+        if new_item:
+            items_listbox.delete(selected_item)
+            items_listbox.insert(selected_item, new_item)
+            name_entry.delete(0, tk.END)
+
+def delete():
+    selected_item = items_listbox.curselection()
+    if selected_item:
+        items_listbox.delete(selected_item)
+
+root = tk.Tk()
+
+name_entry = tk.Entry(root)
+name_entry.pack()
+
+create_button = tk.Button(root, text="Create", command=create)
+create_button.pack()
+
+items_listbox = tk.Listbox(root)
+items_listbox.pack()
+
+read_button = tk.Button(root, text="Read", command=read)
+read_button.pack()
+
+update_button = tk.Button(root, text="Update", command=update)
+update_button.pack()
+
+delete_button = tk.Button(root, text="Delete", command=delete)
+delete_button.pack()
+
+root.mainloop()
