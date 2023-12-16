@@ -34,7 +34,7 @@ entry_altura = tk.Entry(janela, font=('calibre',18, 'bold'), width=24)
 name_label3 = tk.Label(janela, text = 'Peso ', font=('calibre',24, 'bold'))
 entry_peso = tk.Entry(janela, font=('calibre',18, 'bold'), width=24)
 
-botao_calcular = tk.Button(janela, text="Calcular IMC", command=obter_nivel_imc, font=("Arial", 24))
+botao_calcular = tk.Button(janela, text="Calcular IMC", command=calculadora_imc, font=("Arial", 24))
 botao_calcular.pack()
 
 
