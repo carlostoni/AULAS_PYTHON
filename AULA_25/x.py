@@ -34,3 +34,31 @@ btn.grid(row=3, column=1)
 lista.grid(row=4, column=1)
 
 janela.mainloop()
+
+import tkinter as tk
+from tkinter import messagebox
+
+def  create():
+    item = name.entry.get()
+    if item:
+        items_listbox.insert(tk.END, item)
+        name_entry.delete(0, tk.END)
+
+def read():
+    selecte_item = items_listbox.cursorselect()
+    if selecte_item:
+        item = items_listbox.get()
+        massagebox.showinfo('selecionado', f' dados- {item}')
+            if new_item:
+                items_listbox(tk.END, selecte_item)
+
+
+
+def upadate():
+    pass
+
+def delete():
+    pass
+root = tk.Tk()
+
+root.mainloop()
